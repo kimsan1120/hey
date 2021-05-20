@@ -1,16 +1,13 @@
 const request = require("request"); // npm install request
 const cheerio = require("cheerio"); // npm install cheerio-httpcli 를 해야함
-const corsOptions = {
-    origin: '*',
-    credentials: true,
-    methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-};
-
-// middleware handle all request using cors options
-app.options('*', cors(corsOptions));
-app.use(cors(corsOptions));
-
+function ajax(data) {
+	var xhr = new XMLHttpRequest();
+	xhr.addEventListener("load", function() {
+		console.log(this.responseText);
+	});
+	xhr.open("GET", "https://finance.naver.com/marketindex/exchangeDailyQuote.nhn?marketindexCd=FX_USDKRW"+data);
+	xhr.send();
+}
 scraped = {
     'DATE': '',
     'EXCHANGE RATE': '',
