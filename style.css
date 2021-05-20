@@ -1,0 +1,53 @@
+
+.container{
+    background-color:whitesmoke;
+    width: 720px;
+    margin: auto;
+    padding: 10px;
+    margin-top:40px;
+    margin-bottom:40px;
+    border-radius: 25px;
+
+    font-family: 'Malgun Gothic';
+}
+
+.table{
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom:40px;
+}
+
+
+#wrapper{
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+#banner{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.detail{
+    font-size: x-small;
+}
+
+.select{
+    padding: 5px;
+}
+
+.context{
+    padding-bottom: 10px;
+}
+.button{
+    padding-left : 5px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.form-select{
+    width: 100px;
+}
